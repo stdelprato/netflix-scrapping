@@ -1,4 +1,6 @@
 # El script trabaja con ChromeDriver v85 para el navegador Google Chrome v85
+# La funcion de plantillas literales de Python (lineas 63, 69, 71, 73) solo funcionan
+# a partir de Python 3.6 (aclaracion just in case)
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -37,7 +39,6 @@ try:
 
     # Esta parte del diccionario esta escrita manualmente por cada TV show para agarrar
     # lo mas relevante de la sección info de la pagina de la serie en netflix.
-    #
     #
     # Luego, automaticamente se agregan al diccionario las sinopsis 
     # de cada uno de los capitulos, separado por temporada.
